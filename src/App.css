@@ -1,0 +1,223 @@
+.superwrap{
+    background-color: #000;
+
+}
+
+.app__container {
+    display: flex;
+    overflow: hidden;
+    background-color: #111;
+
+
+}
+
+.view__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 230px;
+    height: 100%;
+    background-color: #111;
+    margin-bottom: 90px;
+    margin-top: 60px;
+    padding: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .view__container {
+        margin-left: 0;
+        margin-bottom: 60px;
+        margin-top: 0;
+    }
+}
+
+.sidebar__container {
+    background-color: #000;
+    width: 230px;
+    max-width: 230px;
+    color: #fff;
+    position: fixed;
+    height: 100%;
+    padding: 0 10px 10px;
+}
+
+.install__app__div {
+    color: #999;
+    font-size: 14px;
+    position: absolute;
+    bottom: 110px;
+}
+
+.install__app__icon {
+    margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+    .sidebar__container {
+        display: none;
+    }
+}
+
+.sidebar__row {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 45px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.sidebar__row_ac {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    height: 45px;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: #282828;
+}
+
+
+.sidebar__row:nth-child(1) .sidebar__row__label {
+    color: #fff;
+}
+
+.sidebar__row:hover {
+    background-color: #282828;
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+.sidebar__row__label {
+    font-size: 14px;
+    color: #999;
+    margin-top: 6px;
+    margin-left: 16px;
+}
+
+ .PlayerRSWP{
+    position: sticky;
+    bottom:0;
+}
+
+.settings--icon {
+    /* position: absolute !important; */
+    display: none !important;
+    visibility: hidden;
+}
+
+@media only screen and (min-width: 770px) {
+    .chip__container{
+        display:none;
+    }
+
+    /*  */
+ 
+  
+
+}
+
+
+.playwrap{
+    display: flex; 
+    align-items:center;
+}
+
+.playlistimg{
+    object-fit: contain; 
+    height:240px; 
+    margin-bottom:40px;
+}
+
+.fontdiv{
+    color:#fff; 
+    margin-left:30px;
+}
+
+.playname{
+    font-size:40px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .data-row {
+        overflow-x: scroll;
+    }
+
+   
+}
+
+@media only screen and (max-width: 550px) {
+    .playname{
+        font-size:32px;
+    }
+
+    .playwrap{
+        display: flex; 
+        align-items:center;
+        position:relative;
+      }
+  
+    .fontdiv{
+      
+       color:#fff;
+       margin-left:15px;
+       position:absolute;
+       left:auto;
+       right: auto;
+  
+    }
+  
+    .playlistimg{
+      object-fit: cover;
+      height:240px;
+      width:100% ;
+      margin-bottom:40px;
+    }
+  
+    .pickgradient{
+      position:relative;
+      display:inline-block;
+    }
+    .pickgradient:after {
+      content:'';
+      position:absolute;
+      left:0; top:0;
+      width:100%; height:240px;
+      display:inline-block;
+      background: -moz-linear-gradient(top, rgba(0,0,0,1) 100%, rgba(0,0,0,0.1) 100%); /* FF3.6+ */
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,0,0,0.65)), color-stop(100%,rgba(0,0,0,0))); /* Chrome,Safari4+ */
+      background: -webkit-linear-gradient(top, rgba(0,0,0,1) 100%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+      background: -o-linear-gradient(top, rgba(0,0,0,0) 100%,rgba(0,0,0,0.65) 100%); /* Opera 11.10+ */
+      background: -ms-linear-gradient(top, rgba(0,0,0,0) 100%,rgba(0,0,0,0.65) 100%); /* IE10+ */
+      background: linear-gradient(to bottom, rgba(0,0,0,0.9) 100%,rgba(0,0,0,0.9) 100%); /* W3C */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+    }
+}
+
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+.hidescroll::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hidescroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+ .navbar-toggler{
+     display:none;
+ }
