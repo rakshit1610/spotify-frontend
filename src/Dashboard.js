@@ -219,7 +219,7 @@ useEffect(() => {
   const timer = setTimeout(() => {
     console.log('This will run after 10 second!')
     setUserInfo("change")
-  }, 15000);
+  }, 5000);
   return () => clearTimeout(timer);
 }, []);
 
