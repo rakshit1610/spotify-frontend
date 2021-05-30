@@ -16,7 +16,6 @@ import { Avatar } from "@material-ui/core";
 
 
 import AlbumCard from "./components/AlbumCard";
-import { data } from "./spotify";
 import SettingsIcon from "@material-ui/icons/Settings";
 import Header from './components/Header'
 

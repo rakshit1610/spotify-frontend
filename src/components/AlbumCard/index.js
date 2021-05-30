@@ -1,5 +1,5 @@
 import "./style.css";
-import { images } from "../../config";
+
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 function AlbumCard({ label, description, image }) {
   return (
@@ -17,3 +17,4 @@ function AlbumCard({ label, description, image }) {
 }
 
 export default AlbumCard;
+
