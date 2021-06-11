@@ -49,7 +49,7 @@ spotifyApi.getMe()
   .then(function(data) {
     console.log('Some information about the authenticated user', data.body);
     setHeader({
-      image: data.body.images[0].url ,
+      image: data.body.images[0]?.url ,
       name: data.body.display_name
     })
   }, function(err) {
