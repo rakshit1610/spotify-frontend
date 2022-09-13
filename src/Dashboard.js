@@ -58,7 +58,7 @@ spotifyApi.getMe()
 
 
   // first playlist
-  spotifyApi.getPlaylistsForCategory('pop', {
+  spotifyApi.getPlaylistsForCategory('0JQ5DAqbMKFEC4WFtoNRpw', {
     country: 'IN',
     limit : 8,
     offset : 0
@@ -110,7 +110,7 @@ console.log("Something went wrong!", err);
 });
 
 // third playlist
-spotifyApi.getPlaylistsForCategory('mood', {
+spotifyApi.getPlaylistsForCategory('indie_alt', {
   country: 'IN',
   limit : 8,
   offset : 0
@@ -136,7 +136,7 @@ console.log("Something went wrong!", err);
 });
 
 // fourth playlist
-spotifyApi.getPlaylistsForCategory('equal', {
+spotifyApi.getPlaylistsForCategory('0JQ5DAqbMKFPw634sFwguI', {
   country: 'IN',
   limit : 8,
   offset : 0
@@ -162,7 +162,7 @@ console.log("Something went wrong!", err);
 });
 
 // fifth playlist
-spotifyApi.getPlaylistsForCategory('bollywood', {
+spotifyApi.getPlaylistsForCategory('0JQ5DAqbMKFHCxg5H5PtqW', {
   country: 'IN',
   limit : 8,
   offset : 0
@@ -507,7 +507,7 @@ useEffect(()=>{
           })}
         </div>
       {/* third playlist */}
-      <h4 style={{color: "#fff" }}>Mood</h4>
+      <h4 style={{color: "#fff" }}>Indie</h4>
       <div className="d-flex data-row">
           {thirdcat.map((card) => {
             return (
