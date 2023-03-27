@@ -8,7 +8,7 @@ export default function useAuth(code) {
 
   useEffect(() => {
     axios
-      .post("https://spotify-backend-node.herokuapp.com/login", {
+      .post("https://spotify-backend-node.onrender.com/login", {
         code,
       })
       .then(res => {
@@ -26,7 +26,7 @@ export default function useAuth(code) {
     if (!refreshToken || !expiresIn) return
     const interval = setInterval(() => {
       axios
-        .post("https://spotify-backend-node.herokuapp.com/refresh", {
+        .post("https://spotify-backend-node.onrender.com/refresh", {
           refreshToken,
         })
         .then(res => {
